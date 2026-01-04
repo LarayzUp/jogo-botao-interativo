@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo do Botão Interativo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-icon">🎯</span>
+                    <span class="stat-label">Total</span>
+                </div>
+                <div class="stat-value" id="totalClicks">0</div>
+                <div class="stat-subtitle">cliques</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-icon" id="streakIcon">🔥</span>
+                    <span class="stat-label">Streak</span>
+                </div>
+                <div class="stat-value" id="streakValue">0</div>
+                <div class="stat-subtitle">sequência</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-icon">🏆</span>
+                    <span class="stat-label">Conquistas</span>
+                </div>
+                <div class="stat-value" id="achievementsCount">0</div>
+                <div class="stat-subtitle">de 7</div>
+            </div>
+
+            <div class="stat-card sound-toggle" id="soundToggle">
+                <div class="stat-header">
+                    <span class="stat-icon" id="soundIcon">🔊</span>
+                    <span class="stat-label">Som</span>
+                </div>
+                <div class="stat-value" style="font-size: 24px; margin-top: 10px;" id="soundStatus">Ligado</div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button id="mainButton">
+                ⚡<br>
+                CLIQUE AQUI!
+            </button>
+            <div id="motivationalMessage"></div>
+        </div>
+
+        <div class="achievements-section">
+            <div class="achievements-title">
+                🏆 Suas Conquistas
+            </div>
+            <div class="achievements-grid" id="achievementsGrid"></div>
+        </div>
+
+        <div class="easter-egg-hint" id="easterEggHint">
+            💡 Dica: Tente clicar 5 vezes muito rápido...
+        </div>
+
+        <div id="easterEggUnlocked" style="display: none;"></div>
+    </div>
+</body>
+<script src="interatividade.js"></script>
+</html>
+        
